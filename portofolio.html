@@ -1,0 +1,77 @@
+<html>
+<head>
+<style>
+.btn-container {
+  text-align: center;
+}
+
+button {
+
+  width: 500px;
+  height: 60px;
+  color:black;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+ opacity: 0.7;
+}
+
+.hidden {
+  display: none;
+}
+
+#btn2-text{
+  margin: 30px 0;
+  font-size: 8px;
+  color: white;
+}
+</style>
+
+<body bgcolor=808080>
+<h1 style="background-color:white;height:45px ; width:1500px; " align="center"><font color='black'>PORTFOLIO</font>
+    </h1>
+
+
+<table style="color:white;font-size:100px; " width="1500" >
+<tr>
+<td><img src="https://image.emojisky.com/315/6269315-middle.png" width = "250" height = "230">
+<td>
+<td><b>Suguna Palam</b> <td>
+</tr>
+</table>
+
+
+<div class="btn-container">
+  <button id="btn2">about me</button>
+  <p id="btn2-text" class="hidden">
+<table  style="color:white;" height="150" border=1>
+<tr>
+<th>contact</th>
+<th>Education</th>
+<th>Hobbies</th>
+<th>Accomplishments</th>
+</tr>
+
+ <tr>
+<td>mail:sugunapalam@gmail.com<br>phone:7416xxxxxx<br>address:Gollamandhala, A Konduru.mandal, NTR. District</td>
+<td>Currently pursuing 3rd year B.Tech<br> in RVRJCCE</td>
+<td>reading holybook<br>helping my parents<br>playing games</td>
+<td>The Joy of computing using python-NPTEL<br>Certificate of participation in an workshop Design Thinking Critical Thinking & Innovation<br>ELITE in Data science for engineers-NPTEL</td>
+</tr>
+</table></p>
+</div>
+<script>
+
+   const btn2 = document.getElementById('btn2');
+   const btn2Text = document.getElementById('btn2-text');
+
+    btn2.addEventListener('click', () => {
+     btn2Text.classList.toggle('hidden');
+    });
+
+</script>
+</body>
+</html>
